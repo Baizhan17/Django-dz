@@ -1,0 +1,8 @@
+<html>
+  <h1>go login</h1>
+  <form method="post" autocomplete=>
+    {% csrf_token %}
+    {{loginform.as_p}}
+    <input type="submit" value="Log in"/>  
+  </form>
+</html>
